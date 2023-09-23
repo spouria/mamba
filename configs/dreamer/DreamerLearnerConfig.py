@@ -10,8 +10,8 @@ class DreamerLearnerConfig(DreamerConfig):
         self.VALUE_LR = 5e-4
         self.CAPACITY = 500000
         self.MIN_BUFFER_SIZE = 100
-        self.MODEL_EPOCHS = 1
-        self.EPOCHS = 1
+        self.MODEL_EPOCHS = 40
+        self.EPOCHS = 4
         self.PPO_EPOCHS = 5
         self.MODEL_BATCH_SIZE = 40
         self.BATCH_SIZE = 40
