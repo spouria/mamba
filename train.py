@@ -84,7 +84,7 @@ if __name__ == "__main__":
     configs["learner_config"].ENV_TYPE = Env(args.env)
     configs["controller_config"].ENV_TYPE = Env(args.env)
 
-    exp = Experiment(steps=10 ** 10,
+    exp = Experiment(steps=10 ** 6,
                      episodes=50000,
                      random_seed=RANDOM_SEED,
                      env_config=EnvCurriculumConfig(*zip(configs["env_config"]), Env(args.env),
